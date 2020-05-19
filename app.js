@@ -21,3 +21,4 @@ var array = [
     return "drive";
   },
 ];
+console.log(car.make);
