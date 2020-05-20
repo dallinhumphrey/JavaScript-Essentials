@@ -1,15 +1,34 @@
-function name() {
-  var fullname = "Dallin Humphrey";
-  var lastname = "Parkes";
+var engine = {
+  maker: "Ford",
+  headGasket: {
+    pots: ["piston1", "piston2", "piston3", "piston4", "piston5", "piston6"],
+  },
+};
 
-  function concat(name) {
-    return "MR." + name;
+function runExpression() {
+  var a = 10;
+  var b = 90;
+
+  function add() {
+    return a + b;
   }
 
-  return concat(fullname);
+  return add();
 }
 
-var obj = [{}];
+// console.log(myName(), printName());
+
+// function printName() {
+//   return "John Doe";
+// }
+// function myName() {
+//   return "Dallin";
+// }
+
+// function name(fullname) {
+//   return fullname.firstname + fullname.lastname;
+// }
+// console.log(name({ firstname: "Dallin", lastname: " Humphrey" }));
 
 // var car = {
 //   make: "volvo",
