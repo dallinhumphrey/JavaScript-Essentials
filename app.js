@@ -7,13 +7,12 @@ var engine = {
 
 function runExpression() {
   var a = 10;
-  var b = 90;
 
-  function add() {
+  function add(b) {
     return a + b;
   }
 
-  return add();
+  console.log(add(90), add(20));
 }
 
 // console.log(myName(), printName());
