@@ -1,19 +1,50 @@
-var engine = {
-  maker: "Ford",
-  headGasket: {
-    pots: ["piston1", "piston2", "piston3", "piston4", "piston5", "piston6"],
+var object = {
+  prop: this,
+  embed: {
+    embed: true,
+    method: function () {
+      return this;
+    },
   },
 };
 
-function runExpression() {
-  var a = 10;
+var array = [
+  this,
+  function () {
+    return this;
+  },
+];
+function global() {
+  console.log("from global", this);
 
-  function add(b) {
-    return a + b;
+  function sub() {
+    consele.log("from sub", this);
   }
 
-  console.log(add(90), add(20));
+  sub();
 }
+
+global.call(object);
+
+new global();
+
+// var engine = {
+//   maker: "Ford",
+//   headGasket: {
+//     maker: "Golf",
+//     pots: ["piston1", "piston2", "piston3", "piston4", "piston5", "piston6"],
+//   },
+// };
+
+// function runExpression() {
+//   var a = 10;
+
+//   function add() {
+//     const engine = "New String";
+//   }
+
+//   add();
+// }
 
 // console.log(myName(), printName());
 
