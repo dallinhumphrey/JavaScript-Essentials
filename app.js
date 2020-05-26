@@ -1,13 +1,15 @@
-var select = document.getElementsByName("cars")[0];
+let elements = document.getElementsByName("cssProperty");
 
-select.onclick = function (event) {
-  console.log(event);
-};
+let div = document.getElementById("modify");
 
-function ClickCallback(event) {
-  console.log("clicked by add event listener");
+function set() {
+  for (let index = 0; index < elements.length; index++) {
+    let cssProperty = elements[index].getAttribute("id");
+
+    let cssValue = elements[index].value;
+
+    div.style[cssProperty] = cssValue;
+  }
 }
 
-select.addEventListener("click", ClickCallback);
-
-select.removeEventListener("click", ClickCallback);
+document.getElementById("set").addEventListener("click", set);
