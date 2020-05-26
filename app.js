@@ -1,26 +1,26 @@
-if (true) {
-  var symbolName = "value reference in memory";
+// if (true) {
+//   var symbolName = "value reference in memory";
 
-  let letSymbol = "scoped value";
+//   let letSymbol = "scoped value";
 
-  const symName = "constant value in memory";
-}
+//   const symName = "constant value in memory";
+// }
 
-for (let i = 0; i < 5; i++) {
-  var symbolName = "value reference in memory";
+// for (let i = 0; i < 5; i++) {
+//   var symbolName = "value reference in memory";
 
-  let letSymbol = "scoped value";
+//   let letSymbol = "scoped value";
 
-  const symName = "constant value in memory";
-}
+//   const symName = "constant value in memory";
+// }
 
-function check() {
-  var symbolName = "value reference in memory";
+// function check() {
+//   var symbolName = "value reference in memory";
 
-  let letSymbol = "scoped value";
+//   let letSymbol = "scoped value";
 
-  const symName = "constant value in memory";
-}
+//   const symName = "constant value in memory";
+// }
 
 // var classRegister = ["Dallin", "Kort", "Glen", "Jarom"];
 
