@@ -1,8 +1,9 @@
-var pHello = document.getElementById("hello");
+var el = document.getElementById("style");
 
-pHello.innerText = "new world";
+// el.style.background = "steelblue";
+// el.style.color = "white";
+// el.style.width = "200px";
 
-pHello.innerHTMLs += " order <span>hello world</span>";
+el.style.cssText = " background:steelblue; color:white; width:200px";
 
-pHello.outerHTML =
-  '<h2 id="hello">new world order <span>hello world</span></h2>';
+el.style.cssText += " height:100px;";
