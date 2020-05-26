@@ -1,20 +1,32 @@
-function Apple(color, weight) {
-  this.color = color;
-  this.weight = weight;
+var carsLeft = 1,
+  carsRight = 0,
+  greenMan = "yes";
+
+if (greenMan === "yes") {
+  console.log("cross the road");
+} else if (greenMan === "yes" && (carsLeft === 0 || carsRight === 0)) {
+  console.log("All clear! Cross the road");
+} else {
+  console.log("Stay Where you are!");
 }
 
-Apple.prototype = {
-  eat: function () {
-    return this;
-  },
-  throw: function () {
-    return "throw the apple";
-  },
-};
+// function Apple(color, weight) {
+//   this.color = color;
+//   this.weight = weight;
+// }
 
-var apple1 = new Apple("red", 99);
-var apple2 = new Apple("green", 109);
-var apple3 = new Apple("yellow", 299);
+// Apple.prototype = {
+//   eat: function () {
+//     return this;
+//   },
+//   throw: function () {
+//     return "throw the apple";
+//   },
+// };
+
+// var apple1 = new Apple("red", 99);
+// var apple2 = new Apple("green", 109);
+// var apple3 = new Apple("yellow", 299);
 
 // var object = {
 //   prop: this,
