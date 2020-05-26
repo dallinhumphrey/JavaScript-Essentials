@@ -1,9 +1,13 @@
-var el = document.getElementById("style");
+var select = document.getElementsByName("cars")[0];
 
-// el.style.background = "steelblue";
-// el.style.color = "white";
-// el.style.width = "200px";
+select.onclick = function (event) {
+  console.log(event);
+};
 
-el.style.cssText = " background:steelblue; color:white; width:200px";
+function ClickCallback(event) {
+  console.log("clicked by add event listener");
+}
 
-el.style.cssText += " height:100px;";
+select.addEventListener("click", ClickCallback);
+
+select.removeEventListener("click", ClickCallback);
