@@ -1,12 +1,36 @@
-var classRegister = ["Dallin", "Kort", "Glen", "Jarom"];
+if (true) {
+  var symbolName = "value reference in memory";
+
+  let letSymbol = "scoped value";
+
+  const symName = "constant value in memory";
+}
+
+for (let i = 0; i < 5; i++) {
+  var symbolName = "value reference in memory";
+
+  let letSymbol = "scoped value";
+
+  const symName = "constant value in memory";
+}
+
+function check() {
+  var symbolName = "value reference in memory";
+
+  let letSymbol = "scoped value";
+
+  const symName = "constant value in memory";
+}
+
+// var classRegister = ["Dallin", "Kort", "Glen", "Jarom"];
 
 // for (var i = 0; i < classRegister.length; i++) {
 //   console.log(classRegister[i]);
 // }
 
-for (var i = 0 in classRegister) {
-  console.log(classRegister[i]);
-}
+// for (var i = 0 in classRegister) {
+//   console.log(classRegister[i]);
+// }
 
 // var carsLeft = 1,
 //   carsRight = 0,
