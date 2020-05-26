@@ -1,32 +1,41 @@
-var object = {
-  prop: this,
-  embed: {
-    embed: true,
-    method: function () {
-      return this;
-    },
-  },
-};
-
-var array = [
-  this,
-  function () {
-    return this;
-  },
-];
-function global() {
-  console.log("from global", this);
-
-  function sub() {
-    consele.log("from sub", this);
-  }
-
-  sub();
+function Apple(x, y, color, score) {
+  this.x = x;
+  this.y = y;
+  this.color = color;
+  this.score = score;
 }
 
-global.call(object);
+var apple1 = new Apple(10, 30, "red", 200);
 
-new global();
+// var object = {
+//   prop: this,
+//   embed: {
+//     embed: true,
+//     method: function () {
+//       return this;
+//     },
+//   },
+// };
+
+// var array = [
+//   this,
+//   function () {
+//     return this;
+//   },
+// ];
+// function global() {
+//   console.log("from global", this);
+
+//   function sub() {
+//     consele.log("from sub", this);
+//   }
+
+//   sub();
+// }
+
+// global.call(object);
+
+// new global();
 
 // var engine = {
 //   maker: "Ford",
